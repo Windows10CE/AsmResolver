@@ -1,6 +1,11 @@
 The Member Tree
 ===============
 
+.. note:: 
+
+    The documentation has a new home: `Check it out <https://docs.washi.dev/asmresolver>`_!
+
+
 Assemblies and modules
 ----------------------
 

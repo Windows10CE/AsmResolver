@@ -1,6 +1,11 @@
 Metadata Token Allocation
 =========================
 
+.. note:: 
+
+    The documentation has a new home: `Check it out <https://docs.washi.dev/asmresolver>`_!
+
+
 A lot of models in a .NET module are assigned a unique metadata token. This token can be accessed through the ``IMetadataMember.MetadataToken`` property. The exception to this rule is newly created metadata members. These newly created members are assigned the zero token (a token with RID = 0). Upon building a module, these tokens will be replaced with their actual tokens.
 
 Custom Token Allocation

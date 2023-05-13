@@ -1,6 +1,11 @@
 Exceptions Directory
 ====================
 
+.. note:: 
+
+    The documentation has a new home: `Check it out <https://docs.washi.dev/asmresolver>`_!
+
+
 Structured Exception Handling (SEH) in native programming languages such as C++ are for some platforms implemented using exception handler tables. These are tables that store ranges of addresses that are protected by an exception handler. In the PE file format, these tables are stored in the Exceptions Data Directory. 
 
 The relevant classes for this article are stored in the following namespace:

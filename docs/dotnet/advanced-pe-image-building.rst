@@ -3,6 +3,11 @@
 Advanced PE Image Building
 ==========================
 
+.. note:: 
+
+    The documentation has a new home: `Check it out <https://docs.washi.dev/asmresolver>`_!
+
+
 The easiest way to write a .NET module to the disk is by using the ``Write`` method:
 
 .. code-block:: csharp

@@ -1,6 +1,11 @@
 Member Cloning
 ==============
 
+.. note:: 
+
+    The documentation has a new home: `Check it out <https://docs.washi.dev/asmresolver>`_!
+
+
 Processing a .NET module often involves injecting additional code. Even though all models representing .NET metadata and CIL code are mutable, it might be very time-consuming and error-prone to manually import and inject metadata members and/or CIL code into the target module.
 
 To help developers in injecting existing code into a module, ``AsmResolver.DotNet`` comes with a feature that involves cloning metadata members from one module and copying it over to another. All relevant classes are in the ``AsmResolver.DotNet.Cloning`` namespace:

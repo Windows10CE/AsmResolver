@@ -3,6 +3,11 @@
 PE File Building
 ================
 
+.. note:: 
+
+    The documentation has a new home: `Check it out <https://docs.washi.dev/asmresolver>`_!
+
+
 An ``IPEImage`` is a higher-level abstraction of an actual PE file, and hides many of the actual implementation details such as raw section layout and contents of data directories.
 While this makes reading and interpreting a PE very easy, it makes writing a more involved process.
 

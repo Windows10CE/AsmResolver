@@ -3,6 +3,10 @@
 Advanced Module Reading
 =======================
 
+.. note:: 
+
+    The documentation has a new home: `Check it out <https://docs.washi.dev/asmresolver>`_!
+
 Advanced users might need to configure AsmResolver's module reader. For example, instead of letting the module reader throw exceptions upon reading invalid data, errors should be ignored and recovered from. Other uses might include changing the way the underlying PE or method bodies are read. These kinds of settings can be configured using the ``ModuleReaderParameters`` class.
 
 .. code-block:: csharp

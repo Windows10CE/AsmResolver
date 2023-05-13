@@ -1,6 +1,11 @@
 Dynamic Methods
 ===============
 
+.. note:: 
+
+    The documentation has a new home: `Check it out <https://docs.washi.dev/asmresolver>`_!
+
+
 Dynamic methods are methods that are constructed and assembled at run time. They allow for dynamically generating managed code, without having to go through the process of compiling or generating new assemblies. This is used a lot in obfuscators that implement for example reference proxies or virtual machines.
 
 AsmResolver has support for reading dynamic methods and transforming them into ``MethodDefinition`` objects that can be processed further. All relevant classes are present in the following namespace:

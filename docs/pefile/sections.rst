@@ -3,6 +3,11 @@
 PE Sections
 ===========
 
+.. note:: 
+
+    The documentation has a new home: `Check it out <https://docs.washi.dev/asmresolver>`_!
+
+
 Sections can be read and modified by accessing the ``PEFile.Sections`` property, which is a collection of ``PESection`` objects.
 
 .. code-block:: csharp

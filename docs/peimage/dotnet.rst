@@ -1,6 +1,11 @@
 .NET Data Directories
 =====================
 
+.. note:: 
+
+    The documentation has a new home: `Check it out <https://docs.washi.dev/asmresolver>`_!
+
+
 Managed executables (applications written using a .NET language) contain an extra data directory in the optional header of the PE file format. This small data directory contains a header which is also known as the CLR 2.0 header, and references other structures such as the metadata directory, raw data for manifest resources and sometimes an extra native header in the case of mixed mode applications or zapped (ngen'ed) applications.
 
 .NET directory / CLR 2.0 header

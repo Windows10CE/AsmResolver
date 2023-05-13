@@ -1,6 +1,11 @@
 PE Headers
 ==========
 
+.. note:: 
+
+    The documentation has a new home: `Check it out <https://docs.washi.dev/asmresolver>`_!
+
+
 After obtaining an instance of the ``PEFile`` class, it is possible to read and edit various properties in the DOS header, COFF file header and optional header.
 
 All relevant code for this article is found in the following namespace:

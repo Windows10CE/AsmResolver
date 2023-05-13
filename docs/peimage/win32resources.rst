@@ -1,6 +1,11 @@
 Win32 Resources
 ===============
 
+.. note:: 
+
+    The documentation has a new home: `Check it out <https://docs.washi.dev/asmresolver>`_!
+
+
 Win32 resources are additional files embedded into the PE image, and are typically stored in the ``.rsrc`` section. All classes relevant to Win32 resources can be found in the following namespace:
 
 .. code-block:: csharp

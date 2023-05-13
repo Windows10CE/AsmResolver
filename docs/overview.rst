@@ -2,6 +2,11 @@
 API Overview
 ============
 
+.. note:: 
+
+    The documentation has a new home: `Check it out <https://docs.washi.dev/asmresolver>`_!
+
+
 AsmResolver provides three levels of abstraction of a portable executable (PE) file. This may sound complicated at first, but a typical use-case of the library might only need one of them. The three levels are, in increasing level of abstraction:
 
 * ``PEFile``: The lowest level of abstraction. This layer exposes the raw top-level PE headers, as well as section headers and raw section contents.

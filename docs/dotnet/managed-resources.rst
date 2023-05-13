@@ -1,6 +1,11 @@
 Managed Resources
 =================
 
+.. note:: 
+
+    The documentation has a new home: `Check it out <https://docs.washi.dev/asmresolver>`_!
+
+
 .NET modules may define one or more resource files. Similar to Win32 resources, these are files that contain additional data, such as images, strings or audio files, that are used by the module at run time.
 
 Manifest Resources

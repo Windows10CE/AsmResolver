@@ -1,6 +1,11 @@
 Symbols
 =======
 
+.. note:: 
+
+    The documentation has a new home: `Check it out <https://docs.washi.dev/asmresolver>`_!
+
+
 Symbol records define the top-level metadata of a binary, such as public functions, global fields, compiler information, and user-defined type definitions.
 They are stored in either the global symbols stream, or in individual module streams.
 

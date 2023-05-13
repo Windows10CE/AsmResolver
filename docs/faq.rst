@@ -1,6 +1,11 @@
 Frequently Asked Questions
 ==========================
 
+.. note:: 
+
+    The documentation has a new home: `Check it out <https://docs.washi.dev/asmresolver>`_!
+
+
 
 Why are there so many libraries / packages instead of just one?
 ---------------------------------------------------------------

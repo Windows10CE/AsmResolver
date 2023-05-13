@@ -1,6 +1,11 @@
 Type Memory Layout
 ==================
 
+.. note:: 
+
+    The documentation has a new home: `Check it out <https://docs.washi.dev/asmresolver>`_!
+
+
 Sometimes it is useful to know details about the memory layout of a type at runtime. Knowing the memory layout of a type can help in various processes, including:
 
 - Getting the size of a type at runtime.

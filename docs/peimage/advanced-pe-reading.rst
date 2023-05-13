@@ -3,6 +3,11 @@
 Advanced PE Image Reading
 =========================
 
+.. note:: 
+
+    The documentation has a new home: `Check it out <https://docs.washi.dev/asmresolver>`_!
+
+
 Advanced users might have the need to configure AsmResolver's PE image reader. For example, instead of letting the PE reader throw exceptions upon reading invalid data, errors should be ignored and recovered from. Other uses might include a custom interpretation of .NET metadata streams. These kinds of settings can be configured using the ``PEReaderParameters`` class.
 
 .. code-block:: csharp

@@ -1,6 +1,11 @@
 Type Signatures
 ===============
 
+.. note:: 
+
+    The documentation has a new home: `Check it out <https://docs.washi.dev/asmresolver>`_!
+
+
 Type signatures represent references to types within a blob signature. They are not directly associated with a metadata token, but can reference types defined in one of the metadata tables.
 
 All relevant classes in this document can be found in the following namespaces:

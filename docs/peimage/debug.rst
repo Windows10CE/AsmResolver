@@ -1,6 +1,11 @@
 Debug Directory
 ===============
 
+.. note:: 
+
+    The documentation has a new home: `Check it out <https://docs.washi.dev/asmresolver>`_!
+
+
 The debug data directory is used in portable executables to store compiler-generated debug information. In most cases, this information is a reference to a Program Debug Database (``.pdb``) file.
 
 The relevant classes for this article are stored in the following namespace:

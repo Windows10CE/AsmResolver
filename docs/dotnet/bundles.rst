@@ -1,6 +1,11 @@
 AppHost / SingleFileHost Bundles
 ================================
 
+.. note:: 
+
+    The documentation has a new home: `Check it out <https://docs.washi.dev/asmresolver>`_!
+
+
 Since the release of .NET Core 3.1, it is possible to deploy .NET assemblies as a single binary. These files are executables that do not contain a traditional .NET metadata header, and run natively on the underlying operating system via a platform-specific application host bootstrapper.
 
 AsmResolver supports extracting the embedded files from these types of binaries. Additionally, given the original file or an application host template provided by the .NET SDK, AsmResolver also supports constructing new bundles as well. All relevant code is found in the following namespace:

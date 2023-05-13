@@ -3,6 +3,11 @@
 CIL Method Bodies
 =================
 
+.. note:: 
+
+    The documentation has a new home: `Check it out <https://docs.washi.dev/asmresolver>`_!
+
+
 The relevant models in this document can be found in the following namespaces:
 
 .. code-block:: csharp

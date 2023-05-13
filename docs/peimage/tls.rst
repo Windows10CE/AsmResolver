@@ -1,6 +1,11 @@
 TLS Directory
 =============
 
+.. note:: 
+
+    The documentation has a new home: `Check it out <https://docs.washi.dev/asmresolver>`_!
+
+
 Executables that use multiple threads might require static (non-stack) memory that is local to a specific thread. The PE file format allows for defining segments of memory within the file that specifies what this memory should like, and how it should be initialized. This information is stored inside the Thread Local Storage (TLS) data directory.
 
 All code relevant to the TLS data directory of a PE resides in the following namespace:

@@ -1,6 +1,11 @@
 Exports Directory
 =================
 
+.. note:: 
+
+    The documentation has a new home: `Check it out <https://docs.washi.dev/asmresolver>`_!
+
+
 Dynamically linked libraries (DLLs) often expose symbols through defining exports in the exports directory. 
 
 The ``IPEImage`` interface exposes the ``Exports`` property, exposing a mutable instance of `ExportDirectory`, which defines the following properties:

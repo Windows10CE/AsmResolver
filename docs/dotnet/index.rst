@@ -1,6 +1,11 @@
 Overview
 ========
 
+.. note:: 
+
+    The documentation has a new home: `Check it out <https://docs.washi.dev/asmresolver>`_!
+
+
 The .NET image layer is the third layer of abstraction of the portable executable (PE) file format. It provides a high-level abstraction of the .NET metadata stored in a PE image, that is similar to APIs like ``System.Reflection``. Its root objects are ``AssemblyDefinition`` and ``ModuleDefinition``, and from there it is possible to dissect the .NET assembly hierarchically.
 
 In short, this means the following:

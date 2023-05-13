@@ -3,6 +3,11 @@
 Reading and Writing File Segments
 =================================
 
+.. note:: 
+
+    The documentation has a new home: `Check it out <https://docs.washi.dev/asmresolver>`_!
+
+
 Segments are the basis of everything in AsmResolver.
 They are the fundamental building blocks that together make up a binary file (such as a PE file).
 Segments are organized as a tree, where the leaves are single contiguous chunk of memory, while the nodes are segments that comprise multiple smaller sub-segments.

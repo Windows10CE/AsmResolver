@@ -1,6 +1,11 @@
 Imports Directory
 =================
 
+.. note:: 
+
+    The documentation has a new home: `Check it out <https://docs.washi.dev/asmresolver>`_!
+
+
 Most portable executables import functions and fields from other, external libraries. These are stored in a table in the imports data directory of the PE file. Each entry in this table defines a module that is loaded at runtime, and a set of members that are looked up.
 
 All code relevant to the imports directory of a PE resides in the following namespace:

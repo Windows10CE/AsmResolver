@@ -3,6 +3,11 @@
 Reference Importing
 ===================
 
+.. note:: 
+
+    The documentation has a new home: `Check it out <https://docs.washi.dev/asmresolver>`_!
+
+
 .NET modules use entries in the TypeRef or MemberRef tables to reference types or members from external assemblies. Importing references into the current module, therefore, form a key role when creating new- or modifying existing .NET modules. When a member is not imported into the current module, a ``MemberNotImportedException`` will be thrown when you are trying to create a PE image or write the module to the disk.
 
 AsmResolver provides the ``ReferenceImporter`` class that does most of the heavy lifting. Obtaining an instance of ``ReferenceImporter`` can be done in two ways.

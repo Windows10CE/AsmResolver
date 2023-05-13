@@ -1,6 +1,11 @@
 Basic I/O
 =========
 
+.. note:: 
+
+    The documentation has a new home: `Check it out <https://docs.washi.dev/asmresolver>`_!
+
+
 Every raw PE file interaction is done through classes defined by the ``AsmResolver.PE.File`` namespace:
 
 .. code-block:: csharp

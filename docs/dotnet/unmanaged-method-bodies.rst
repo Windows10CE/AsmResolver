@@ -1,6 +1,11 @@
 Native Method Bodies
 ====================
 
+.. note:: 
+
+    The documentation has a new home: `Check it out <https://docs.washi.dev/asmresolver>`_!
+
+
 Method bodies in .NET binaries are not limited to CIL as the implementation language. Mixed-mode applications can contain methods implemented using unmanaged code that runs directly on the underlying processor. Languages might include x86 or ARM, and are always platform-specific.
 
 AsmResolver supports creating new method bodies that are implemented this way. The relevant models in this document can be found in the following namespaces:
