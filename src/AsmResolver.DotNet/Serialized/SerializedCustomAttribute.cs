@@ -36,15 +36,15 @@ namespace AsmResolver.DotNet.Serialized
         }
 
         /// <inheritdoc />
-        protected override ICustomAttributeType? GetConstructor()
+        protected override IMethodDefOrRef? GetConstructor()
         {
             var token = _context.TablesStream
                 .GetIndexEncoder(CodedIndex.CustomAttributeType)
                 .DecodeIndex(_row.Type);
 
             return _context.ParentModule.TryLookupMember(token, out var member)
-                ? member as ICustomAttributeType
-                : _context.BadImageAndReturn<ICustomAttributeType>($"Invalid constructor in custom attribute {MetadataToken}.");
+                ? member as IMethodDefOrRef
+                : _context.BadImageAndReturn<IMethodDefOrRef>($"Invalid constructor in custom attribute {MetadataToken}.");
         }
 
         /// <inheritdoc />

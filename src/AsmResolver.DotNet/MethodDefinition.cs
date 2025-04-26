@@ -21,7 +21,7 @@ namespace AsmResolver.DotNet
         IMemberDefinition,
         IOwnedCollectionElement<TypeDefinition>,
         IMemberRefParent,
-        ICustomAttributeType,
+        IMethodDefOrRef,
         IHasGenericParameters,
         IMemberForwarded,
         IHasSecurityDeclaration,

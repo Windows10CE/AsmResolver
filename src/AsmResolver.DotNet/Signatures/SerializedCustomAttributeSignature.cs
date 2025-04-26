@@ -76,7 +76,7 @@ namespace AsmResolver.DotNet.Signatures
         }
 
         /// <inheritdoc />
-        public override bool IsCompatibleWith(ICustomAttributeType constructor, IErrorListener listener)
+        public override bool IsCompatibleWith(IMethodDefOrRef constructor, IErrorListener listener)
         {
             return !IsInitialized || base.IsCompatibleWith(constructor, listener);
         }

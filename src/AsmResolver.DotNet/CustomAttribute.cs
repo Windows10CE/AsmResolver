@@ -10,7 +10,7 @@ namespace AsmResolver.DotNet
     public class CustomAttribute : MetadataMember, IOwnedCollectionElement<IHasCustomAttribute>
     {
         private readonly LazyVariable<CustomAttribute, IHasCustomAttribute?> _parent;
-        private readonly LazyVariable<CustomAttribute, ICustomAttributeType?> _constructor;
+        private readonly LazyVariable<CustomAttribute, IMethodDefOrRef?> _constructor;
         private readonly LazyVariable<CustomAttribute, CustomAttributeSignature?> _signature;
 
         /// <summary>
@@ -21,7 +21,7 @@ namespace AsmResolver.DotNet
             : base(token)
         {
             _parent = new LazyVariable<CustomAttribute, IHasCustomAttribute?>(x => x.GetParent());
-            _constructor = new LazyVariable<CustomAttribute, ICustomAttributeType?>(x => x.GetConstructor());
+            _constructor = new LazyVariable<CustomAttribute, IMethodDefOrRef?>(x => x.GetConstructor());
             _signature = new LazyVariable<CustomAttribute, CustomAttributeSignature?>(x => x.GetSignature());
         }
 
@@ -29,7 +29,7 @@ namespace AsmResolver.DotNet
         /// Creates a new custom attribute.
         /// </summary>
         /// <param name="constructor">The constructor of the attribute to call.</param>
-        public CustomAttribute(ICustomAttributeType? constructor)
+        public CustomAttribute(IMethodDefOrRef? constructor)
             : this(new MetadataToken(TableIndex.CustomAttribute, 0))
         {
             Constructor = constructor;
@@ -41,7 +41,7 @@ namespace AsmResolver.DotNet
         /// </summary>
         /// <param name="constructor">The constructor of the attribute to call.</param>
         /// <param name="signature">The signature containing the arguments to the constructor.</param>
-        public CustomAttribute(ICustomAttributeType? constructor, CustomAttributeSignature? signature)
+        public CustomAttribute(IMethodDefOrRef? constructor, CustomAttributeSignature? signature)
             : this(new MetadataToken(TableIndex.CustomAttribute, 0))
         {
             Constructor = constructor;
@@ -66,7 +66,7 @@ namespace AsmResolver.DotNet
         /// <summary>
         /// Gets or sets the constructor that is invoked upon initializing the attribute.
         /// </summary>
-        public ICustomAttributeType? Constructor
+        public IMethodDefOrRef? Constructor
         {
             get => _constructor.GetValue(this);
             set => _constructor.SetValue(value);
@@ -102,7 +102,7 @@ namespace AsmResolver.DotNet
         /// <remarks>
         /// This method is called upon initialization of the <see cref="Constructor"/> property.
         /// </remarks>
-        protected virtual ICustomAttributeType? GetConstructor() => null;
+        protected virtual IMethodDefOrRef? GetConstructor() => null;
 
         /// <summary>
         /// Obtains the signature of the attribute.

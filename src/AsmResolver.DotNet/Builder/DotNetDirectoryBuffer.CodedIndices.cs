@@ -105,7 +105,7 @@ namespace AsmResolver.DotNet.Builder
                 .EncodeToken(token);
         }
 
-        private uint AddCustomAttributeType(ICustomAttributeType? constructor)
+        private uint AddCustomAttributeType(IMethodDefOrRef? constructor)
         {
             if (!AssertIsImported(constructor))
                 return 0;

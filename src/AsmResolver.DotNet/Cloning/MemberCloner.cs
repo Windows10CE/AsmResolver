@@ -459,7 +459,7 @@ namespace AsmResolver.DotNet.Cloning
             }
 
             return new CustomAttribute(
-                (ICustomAttributeType) context.Importer.ImportMethod(constructor),
+                context.Importer.ImportMethod(constructor),
                 clonedSignature);
         }
 

@@ -87,7 +87,7 @@ namespace AsmResolver.DotNet.Signatures
         /// <exception cref="FormatException">Occurs when the input stream does not point to a valid signature.</exception>
         public static CustomAttributeSignature FromReader(
             in BlobReaderContext context,
-            ICustomAttributeType ctor,
+            IMethodDefOrRef ctor,
             in BinaryStreamReader reader)
         {
             var genericContext = GenericContext.FromMethod(ctor);
@@ -162,7 +162,7 @@ namespace AsmResolver.DotNet.Signatures
         /// </summary>
         /// <param name="constructor">The constructor to validate against.</param>
         /// <returns><c>true</c> if the constructor is compatible, <c>false</c> otherwise.</returns>
-        public bool IsCompatibleWith(ICustomAttributeType constructor)
+        public bool IsCompatibleWith(IMethodDefOrRef constructor)
         {
             return IsCompatibleWith(constructor, EmptyErrorListener.Instance);
         }
@@ -173,7 +173,7 @@ namespace AsmResolver.DotNet.Signatures
         /// <param name="constructor">The constructor to validate against.</param>
         /// <param name="listener">The object responsible for reporting any errors during the validation of the signature.</param>
         /// <returns><c>true</c> if the constructor is compatible, <c>false</c> otherwise.</returns>
-        public virtual bool IsCompatibleWith(ICustomAttributeType constructor, IErrorListener listener)
+        public virtual bool IsCompatibleWith(IMethodDefOrRef constructor, IErrorListener listener)
         {
             var signature = constructor.Signature;
 
